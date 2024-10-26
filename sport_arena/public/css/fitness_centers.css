@@ -23,6 +23,17 @@
     left: 5%;
     /* display: inline-block; */
 }
+
+.sub_title{
+    font-size: 3.5vw;
+    font-weight: 600;
+    display:inline-block;
+    position: relative;
+    top: -40vh;
+    left: 25%;
+    font-family: "Goldman", sans-serif;
+    color: rgb(19, 27, 65);
+}
 .fitness-center-wrapper {
     display: flex;
     justify-content: space-around;
@@ -57,7 +68,7 @@
 }
 
 .fitness-title {
-    font-size: 1.5rem;
+    font-size: 2.25rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
