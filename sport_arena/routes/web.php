@@ -41,3 +41,7 @@ Route::get('/booking', function () {
 });
 
 Route::post('/bookings', [BookingController::class, 'store']);
+
+Route::get('/fitness', function () {
+    return view('fitness_centers');
+});

@@ -1,0 +1,176 @@
+.background-section {
+    background-image: url("/images/Frame 5.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: absolute; */
+}
+.title {
+    color: rgb(19, 27, 65);
+    font-size: 7vw;
+    position: relative;
+    top: -50px;
+    text-align: right;
+    right: 5%;
+    font-family: "Goldman", sans-serif;
+    display: inline;
+    text-shadow: 2px 4px 2px rgb(225, 227, 235);
+}
+
+.fitness_image img {
+    position: relative;
+    width: 25%;
+    top: 0px;
+    left: 5%;
+    /* display: inline-block; */
+}
+.fitness-center-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.fitness-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a1a3d;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%; /* Adjust width based on your preference */
+    min-width: 280px;
+    max-width: 350px;
+}
+
+.fitness-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.fitness-card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.fitness-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.fitness-details {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn-booking {
+    background-color: #002663;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.btn-booking:hover {
+    background-color: #1d4e89;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .fitness-center-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fitness-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .fitness-image {
+        height: 200px;
+    }
+}
+
+.contact_cont {
+    position: relative;
+    top: -35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 3% 0 6%;
+    align-items: flex-start;
+    font-size: 1vw;
+}
+
+/* .contact_icon {
+    display: flex;
+    position: relative;
+    top: -35px;
+}
+
+.address_icon img {
+    width: 30%;
+    position: relative;
+    left: 20%;
+    top: -88px;
+}
+
+.phone_icon img {
+    width: 30%;
+    position: relative;
+    top: -88px;
+    left: 340%;
+}
+
+.email_icon img {
+    width: 30%;
+    position: relative;
+    top: -88px;
+    left: 720%;
+} */
+
+.social_media {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -35px;
+}
+.social_media img {
+    width: 50%;
+}
+
+.payment_meth {
+    display: flex;
+    justify-content: space-around;
+    margin: 0.25% 35% 0 35%;
+    position: relative;
+    top: -35px;
+}
+
+.payment_meth img {
+    width: 35%;
+    justify-content: center;
+}
+
+.footer1 p {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -15px;
+    font-size: 0.8vw;
+}
+.footer2 p {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -35px;
+    font-size: 0.8vw;
+}
