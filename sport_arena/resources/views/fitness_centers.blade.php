@@ -15,7 +15,10 @@
         <img src="{{ asset('images/fitness_image.png') }}">
     </div>
 
-    <h2>Fitness Centers</h2>
+    <div class="sub_title">
+        <p>Fitness Centers</p>
+    </div>
+    
     <div class="container mt-5 mb-5">
         
         
@@ -67,9 +70,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div><br><br><br><br>
 
-    <!-- <div class="contact_cont">
+    <div class="contact_cont">
         
         <div class="address">
             <p>No 138/1,<br> Kumarathunga Rd,<br> Matara.</p>
@@ -86,7 +89,7 @@
             <br>thisarijayawickrama@gmail.com
             </p>
         </div>
-    </div> -->
+    </div>
 
     <!-- <div class="contact_icon">
         <div class="address_icon">
