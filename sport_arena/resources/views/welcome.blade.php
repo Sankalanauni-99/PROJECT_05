@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', 'Home')
+@section('title', 'Dashboard')
 
 @section('custom-css')
     <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
@@ -46,7 +46,7 @@
             </svg>
         </div>
         <ul class="nav-links" id="nav-links">
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home">Dashboard</a></li>
             <li><a href="#category">Category</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contactu">Contact</a></li>

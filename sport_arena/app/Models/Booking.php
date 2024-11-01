@@ -14,5 +14,4 @@ class Booking extends Model
     protected $attributes = [
        // 'confirmation_status' => 'pending', // Default value
     ];
-
 }

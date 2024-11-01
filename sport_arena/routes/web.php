@@ -4,12 +4,17 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ManagerController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get("/redirects",[HomeController::class,"redirects"]);
+Route::get('/redirects',[HomeController::class,'redirects']);
+
+Route::get('/all_bookings',[ManagerController::class,'all_bookings']);
+
+Route::get('/confirmed_bookings',[ManagerController::class,'confirmed_bookings']);
 
 // Route::middleware('admin:admin')->group(function(){
 //     Route::get('admin/login',[AdminController::class, 'loginForm']);
