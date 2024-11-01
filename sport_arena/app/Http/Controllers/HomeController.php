@@ -16,9 +16,11 @@ public function redirects(){
     $usertype=Auth::user()->usertype;
 
     if($usertype=="1"){
-        return view("dashboard-admin");
+        return view("Admin.dashboard-admin");
+    }else if($usertype=="2"){
+        return view("Manager.dashboard-manager");
     }else{
-        return view("dashboard");
+    return view("User.dashboard");
     }
 }
 }

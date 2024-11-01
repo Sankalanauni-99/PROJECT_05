@@ -58,12 +58,12 @@
     <p>User is NOT authenticated.</p>
 @endif -->
 
-<div class="user-icon">
+<!-- <div class="user-icon">
     <a href="">
             <img src="{{ asset('images/user icon.png') }}" alt="Default User Icon">
        
     </a>
-</div>
+</div> -->
 
 
     </nav>
@@ -117,11 +117,15 @@
 
         <div class="categories_cont">
             <div class="category-item">
+            
                 <img src="{{ asset('images/City-Full-Court.jpg') }}">
+            
                  <p>Indoor Stadiums</p>
             </div>
             <div class="category-item">
+            <a href="{{ route('fitness_centers') }}">
                 <img src="{{ asset('images/fitnesscenter.jpg') }}">
+            </a>
                 <p>Fitness Centers</p>
             </div>
             <div class="category-item">

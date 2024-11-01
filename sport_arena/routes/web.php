@@ -36,12 +36,13 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('/booking', function () {
-    return view('booking');
-});
-
-Route::post('/bookings', [BookingController::class, 'store']);
+// Route::get('/booking', function () {
+//     return view('booking');
+// });
 
 Route::get('/fitness', function () {
     return view('fitness_centers');
-});
+})->name('fitness_centers');
+
+Route::get('/booking', [BookingController::class, 'create'])->name('booking');
+Route::post('/bookings', [BookingController::class, 'store'])->name('bookings.store');
