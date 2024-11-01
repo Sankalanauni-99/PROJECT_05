@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
+use app\Models\User;
+
 use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
@@ -20,7 +23,7 @@ public function redirects(){
     }else if($usertype=="2"){
         return view("Manager.dashboard-manager");
     }else{
-    return view("User.dashboard");
+ return view("User.dashboard");
     }
 }
 }
