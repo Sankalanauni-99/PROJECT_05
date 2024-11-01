@@ -9,5 +9,10 @@ class Booking extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name','email','phone','date', 'time_from','time_to', 'instructor_needed'];
+    protected $fillable = ['user_id', 'arena_id', 'date', 'time_from', 'time_to','confirmation_status', 'instructor_needed'];
+    
+    protected $attributes = [
+       // 'confirmation_status' => 'pending', // Default value
+    ];
+
 }

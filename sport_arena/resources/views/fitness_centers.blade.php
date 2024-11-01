@@ -36,7 +36,7 @@
                         077 408 4602<br>
                         48 Udyana mawatha, Matara
                     </p>
-                    <a href="#" class="btn-booking">Booking</a>
+                    <a href="{{ route('booking', ['arena_id' => 1]) }}" class="btn-booking">Booking</a>
                 </div>
             </div>
             <!-- Fitness Center 2 -->
@@ -51,7 +51,7 @@
                         077 347 1489<br>
                         Kotuwegoda, Matara
                     </p>
-                    <a href="#" class="btn-booking">Booking</a>
+                    <a href="{{ route('booking', ['arena_id' => 2]) }}" class="btn-booking">Booking</a>
                 </div>
             </div>
             <!-- Fitness Center 3 -->
@@ -66,7 +66,7 @@
                         071 818 5449<br>
                         67 Weherahena Rd, Matara
                     </p>
-                    <a href="#" class="btn-booking">Booking</a>
+                    <a href="{{ route('booking', ['arena_id' => 3]) }}" class="btn-booking">Booking</a>
                 </div>
             </div>
         </div>
