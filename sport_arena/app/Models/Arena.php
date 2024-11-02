@@ -14,7 +14,7 @@ class Arena extends Model
 
     // Specify the fillable fields to allow mass assignment
     protected $fillable = [
-        'name',        // Add the name of the arena
+        'arena_name',        // Add the name of the arena
         'location',    // Add the location of the arena
         'contact',     // Add the contact number of the arena
         'open_time',   // Add the opening time of the arena

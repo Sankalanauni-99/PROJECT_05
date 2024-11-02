@@ -5,6 +5,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ManagerController;
+use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -51,3 +52,9 @@ Route::get('/fitness', function () {
 
 Route::get('/booking', [BookingController::class, 'create'])->name('booking');
 Route::post('/bookings', [BookingController::class, 'store'])->name('bookings.store');
+
+Route::get('/my_bookings',[UserController::class,'my_bookings']);
+Route::get('/confirm_bookings',[UserController::class,'confirm_bookings']);
+Route::get('/reject_bookings',[UserController::class,'reject_bookings']);
+Route::get('/pending_bookings',[UserController::class,'pending_bookings']);
+Route::get('/delete/{id}',[UserController::class,'deleteBooking']);
