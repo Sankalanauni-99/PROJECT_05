@@ -23,7 +23,8 @@ public function redirects(){
     }else if($usertype=="2"){
         return view("Manager.dashboard-manager");
     }else{
- return view("User.dashboard");
+     return view("User.dashboard-user");
+    //return view("dashboard");
     }
 }
 }

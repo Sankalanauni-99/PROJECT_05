@@ -14,4 +14,9 @@ class Booking extends Model
     protected $attributes = [
        // 'confirmation_status' => 'pending', // Default value
     ];
+
+    public function arena()
+    {
+        return $this->belongsTo(Arena::class);
+    }
 }
