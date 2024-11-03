@@ -8,7 +8,8 @@
             border:1px solid darkblue;
             margin:auto;
             width: 1000px;
-
+            background: #ffffff;
+           
         }
         th
         {
@@ -30,6 +31,14 @@
             padding:10px;
 
         }
+        .container-fluid{
+            background-color:white;
+
+        }
+        .page-header{
+            background-color:white;
+
+        }
     </style>
   </head>
   <body>
@@ -40,25 +49,23 @@
       <div class="page-content">
         <div class="page-header">
           <div class="container-fluid">
-            <h1>Confirmed Bookings</h1>
+          <h1>Rejected Bookings</h1>
           <table>
                 <tr>
                 <th>Payment ID</th>
                 <th>Booking ID</th>
                 <th>User ID</th>
-                <th>Email</th>
                 <th>Date</th>
                 <th>Time_From</th>
                 <th>Time_To</th>
                 <th>Delete Booking</th>
                 </tr>
                      @foreach($data as $data)
-                      @if($data->booking->confirmation_status == 'confirmed')
+                      @if($data->booking->confirmation_status == 'rejected')
                 <tr>
                     <td>{{$data->id}}</td>
                     <td>{{$data->booking_id}}</td>
                     <td>{{$data->booking->user_id}}</td>
-                    <td>{{$data->user->email}}</td>
                     <td>{{$data->booking->date}}</td>
                     <td>{{$data->booking->time_from}}</td>
                     <td>{{$data->booking->time_to}}</td>

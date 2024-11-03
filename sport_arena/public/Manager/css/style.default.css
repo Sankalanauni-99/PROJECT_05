@@ -201,7 +201,7 @@ pre {
 
 .block {
   padding: 20px;
-  background: #2d3035;
+  background: #ffffff;
   color: #8a8d93;
   margin-bottom: 30px;
 }
@@ -223,7 +223,7 @@ pre {
 
 .page-content {
   position: relative;
-  background: #22252a;
+  background: #ffffff;
   min-height: 100vh;
   width: calc(100% - 280px);
   padding: 0;
@@ -394,7 +394,7 @@ i[class*='icon-'] {
 * ==========================================================
 */
 nav.navbar {
-  background: #2d3035;
+  background: #ffffff;
   color: #8a8d93;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -408,7 +408,7 @@ nav.navbar .sidebar-toggle {
   line-height: 29px;
   text-align: center;
   border-radius: 50%;
-  background: #282b2f;
+  background: #ffffff;
   color: #8a8d93;
   font-size: 1.1rem;
   border: 2px solid #3d4148;
@@ -715,7 +715,7 @@ nav.navbar .dropdown .dropdown-menu.active {
 */
 nav#sidebar {
   width: 280px;
-  background: #2d3035;
+  background: #ffffff;
   color: #6a6c70;
   border-right: 1px solid #34373d;
   /* shrinked navbar */
