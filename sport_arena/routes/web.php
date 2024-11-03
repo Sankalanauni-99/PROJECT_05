@@ -1,11 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Mail;
+
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ManagerController;
 use App\Http\Controllers\UserController;
+use App\Mail\FirstMail;
+
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -51,6 +56,10 @@ Route::middleware([
 Route::get('/fitness', function () {
     return view('fitness_centers');
 })->name('fitness_centers');
+
+Route::get('/send-mail', function () {
+    Mail::to('test@test.com')->send(new FirstMail());
+});
 
 Route::get('/booking', [BookingController::class, 'create'])->name('booking');
 Route::post('/bookings', [BookingController::class, 'store'])->name('bookings.store');

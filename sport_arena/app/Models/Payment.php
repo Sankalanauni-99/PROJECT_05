@@ -21,9 +21,9 @@ class Payment extends Model
     // {
     //     return $this->hasOne('App\Models\User','id','user_id');
 
-    // }
+    //  }
 
-    // In App\Models\Payment.php
+   // In App\Models\Payment.php
 public function user()
 {
     return $this->belongsTo('App\Models\User', 'user_id');

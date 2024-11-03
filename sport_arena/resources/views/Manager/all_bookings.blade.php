@@ -85,7 +85,8 @@
 
                     </td>
                     <td><span style="padding-bottom: 10px;"><a class="btn btn-success" href="{{url('confirm_book',$data->booking_id)}}">Confirm</a></span>
-                        <a class="btn btn-warning" href="{{url('reject_book',$data->booking_id)}}">Reject</a>
+                    <a style="padding-bottom: 10px;" href="/send-mail">send mail</a>   
+                    <a class="btn btn-warning" href="{{url('reject_book',$data->booking_id)}}">Reject</a>
                 </td>
                 </tr>
                     @endforeach
