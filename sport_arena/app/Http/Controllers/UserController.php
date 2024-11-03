@@ -67,7 +67,7 @@ class UserController extends Controller
                 $booking->delete();
                 return redirect('/my_bookings')->with('success', 'Booking Deleted Successfully');
             } else {
-                return redirect('/my_bookings')->with('fail', 'Only pending bookings can be deleted.');
+                return redirect('/my_bookings')->with('fail', 'Sorry!! Only pending bookings can be deleted.');
             }
         } catch (\Exception $e) {
             return redirect('/my_bookings')->with('fail', $e->getMessage());
