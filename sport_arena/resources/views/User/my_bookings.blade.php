@@ -27,7 +27,7 @@
 @endif
 
                 <div class="card-header">
-                    MY BOOKINGS
+                    <h1>MY BOOKINGS</h1>
                 </div>
                     <div class="card-body">
                         <table class="table table-sm table-striped table-bordered">
