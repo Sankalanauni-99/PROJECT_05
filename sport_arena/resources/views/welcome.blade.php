@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', 'Dashboard')
+@section('title', 'welcome')
 
 @section('custom-css')
     <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
@@ -46,7 +46,7 @@
             </svg>
         </div>
         <ul class="nav-links" id="nav-links">
-            <li><a href="#home">Dashboard</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#category">Category</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contactu">Contact</a></li>
@@ -89,7 +89,9 @@
         </nav>
     @endif
 </div>
-
+    <div class="logo">
+        <img src="{{ asset('logo/cropped-image (3).png') }}">
+    </div>
 
     <div class="title">
         <p>PlaySpace</p>

@@ -46,7 +46,7 @@ class BookingController extends Controller
 
             $booking->save();
     
-            return redirect()->route('bookings.index')->with('success', 'Booking submitted successfully!');
+            return redirect()->route('booking', ['arena_id' => $request->arena_id])->with('success', 'Booking submitted successfully!');
         } catch (\Exception $e) {
           //  dd($request->arena_id);
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);

@@ -5,6 +5,21 @@
     <link rel="stylesheet" href="{{ asset('css/booking.css') }}">
 @endsection
 @section('content')
+
+@if (session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+
+@if ($errors->any())
+    <div class="alert alert-danger">
+        @foreach ($errors->all() as $error)
+            <p>{{ $error }}</p>
+        @endforeach
+    </div>
+@endif
+
 <p>Booking Form</p>
     <div class="container">
         <form action="{{ route('bookings.store') }}" method="POST">

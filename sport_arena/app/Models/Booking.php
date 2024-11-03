@@ -15,9 +15,15 @@ class Booking extends Model
        // 'confirmation_status' => 'pending', // Default value
     ];
 
-    public function user()
-{
-    return $this->belongsTo('App\Models\User', 'user_id');
-}
 
+//     public function user()
+// {
+//     return $this->belongsTo('App\Models\User', 'user_id');
+// }
+
+
+    public function arena()
+    {
+        return $this->belongsTo(Arena::class);
+    }
 }
