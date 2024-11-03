@@ -89,7 +89,9 @@
         </nav>
     @endif
 </div>
-
+    <div class="logo">
+        <img src="{{ asset('logo/cropped-image (3).png') }}">
+    </div>
 
     <div class="title">
         <p>PlaySpace</p>
