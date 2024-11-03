@@ -16,6 +16,8 @@ Route::get('/all_bookings',[ManagerController::class,'all_bookings']);
 
 Route::get('/confirmed_bookings',[ManagerController::class,'confirmed_bookings']);
 
+Route::get('/rejected_bookings',[ManagerController::class,'rejected_bookings']);
+
 // Route::middleware('admin:admin')->group(function(){
 //     Route::get('admin/login',[AdminController::class, 'loginForm']);
 //     Route::post('admin/login',[AdminController::class, 'store'])->name('admin.login');
@@ -51,3 +53,8 @@ Route::get('/fitness', function () {
 
 Route::get('/booking', [BookingController::class, 'create'])->name('booking');
 Route::post('/bookings', [BookingController::class, 'store'])->name('bookings.store');
+
+Route::get('/confirm_book/{booking_id}', [ManagerController::class, 'confirm_book']);
+Route::get('/reject_book/{booking_id}', [ManagerController::class, 'reject_book']);
+
+Route::get('/delete_book/{booking_id}', [ManagerController::class, 'delete_book']);

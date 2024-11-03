@@ -15,8 +15,8 @@
                 
                     <li><a href="{{url('all_bookings')}}"><i class="icon-windows"></i>All Bookings</a></li>
                     <li><a href="{{url('confirmed_bookings')}}"><i class="icon-windows"></i>Confirmed Bookings</a></li>
-                 
-                <li><a href="#"> <i class="icon-logout"></i>Login page </a></li>
+                    <li><a href="{{url('rejected_bookings')}}"><i class="icon-windows"></i>Rejected Bookings</a></li>
+                
         </ul>
       </nav>
       <!-- Sidebar Navigation end-->

@@ -1,8 +1,5 @@
-<<<<<<< Updated upstream
-<x-app-layout>
-<h1>Manager</h1>
-</x-app-layout>
-=======
+
+
 <!DOCTYPE html>
 <html>
   <head> 
@@ -24,4 +21,3 @@
     @include('Manager.js-manager')
   </body>
 </html>
->>>>>>> Stashed changes
