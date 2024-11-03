@@ -27,14 +27,14 @@ class ManagerController extends Controller
 
    public function confirmed_bookings()
    {
-    $data = Payment::select('id','booking_id')->get();
+    $data = Payment::select('id','user_id','booking_id')->get();
    return view('Manager.confirmed_bookings',compact('data'));
 
    }
 
    public function rejected_bookings()
    {
-    $data = Payment::select('id','booking_id')->get();
+    $data = Payment::select('id','user_id','booking_id')->get();
    return view('Manager.rejected_bookings',compact('data'));
 
    }

@@ -9,7 +9,8 @@
             <p>Web Designer</p>
           </div>
         </div> -->
-        <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
+        <!-- Sidebar Navidation Menus-->
+         <!-- <span class="heading">Main</span> -->
         <ul class="list-unstyled">
                 <li class="active"><a href="{{url('/')}}"> <i class="icon-home"></i>Home</a></li>
                 <li class="active"><a href="{{url('my_bookings')}}"> <i class="icon-padnote"></i>My Bookings</a></li>

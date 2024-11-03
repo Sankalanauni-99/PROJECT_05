@@ -14,7 +14,7 @@
         <div class="page-header">
             <div class="container-fluid"> 
                 <div class="card-header">
-                    REJECTED BOOKINGS
+                    <h1>REJECTED BOOKINGS</h1>
                 </div>
                     <div class="card-body">
                         <table class="table table-sm table-striped table-bordered">
