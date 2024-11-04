@@ -85,7 +85,9 @@
 
                     </td>
                     <td><span style="padding-bottom: 10px;"><a class="btn btn-success" href="{{url('confirm_book',$data->booking_id)}}">Confirm</a></span>
-                    <a style="padding-bottom: 10px;" href="/send-mail">send mail</a>   
+                    <!-- <a style="padding-bottom: 10px;" href="/send-mail">send mail</a>    -->
+                    <a style="padding-bottom: 10px;" href="{{ route('send.mail', ['email' => $data->user->email]) }}">send mail</a>
+
                     <a class="btn btn-warning" href="{{url('reject_book',$data->booking_id)}}">Reject</a>
                 </td>
                 </tr>

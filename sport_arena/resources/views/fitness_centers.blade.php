@@ -36,7 +36,13 @@
                         077 408 4602<br>
                         48 Udyana mawatha, Matara
                     </p>
-                    <a href="{{ route('booking', ['arena_id' => 1]) }}" class="btn-booking">Booking</a>
+                    @if(auth()->check())
+                        <!-- If the user is logged in, show the normal booking button -->
+                        <a href="{{ route('booking', ['arena_id' => 1]) }}" class="btn-booking">Booking</a>
+                    @else
+                        <!-- If the user is not logged in, show a disabled booking button with an alert -->
+                        <a href="javascript:void(0);" onclick="alert('Please log in first.')" class="btn-booking disabled">Booking</a>
+                    @endif
                 </div>
             </div>
             <!-- Fitness Center 2 -->
@@ -51,7 +57,11 @@
                         077 347 1489<br>
                         Kotuwegoda, Matara
                     </p>
-                    <a href="{{ route('booking', ['arena_id' => 2]) }}" class="btn-booking">Booking</a>
+                    @if(auth()->check())
+                        <a href="{{ route('booking', ['arena_id' => 2]) }}" class="btn-booking">Booking</a>
+                    @else
+                        <a href="javascript:void(0);" onclick="alert('Please log in first.')" class="btn-booking disabled">Booking</a>
+                    @endif
                 </div>
             </div>
             <!-- Fitness Center 3 -->
@@ -66,7 +76,11 @@
                         071 818 5449<br>
                         67 Weherahena Rd, Matara
                     </p>
-                    <a href="{{ route('booking', ['arena_id' => 3]) }}" class="btn-booking">Booking</a>
+                    @if(auth()->check())
+                        <a href="{{ route('booking', ['arena_id' => 3]) }}" class="btn-booking">Booking</a>
+                    @else
+                        <a href="javascript:void(0);" onclick="alert('Please log in first.')" class="btn-booking disabled">Booking</a>
+                    @endif
                 </div>
             </div>
         </div>
