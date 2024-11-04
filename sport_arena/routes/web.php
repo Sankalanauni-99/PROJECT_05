@@ -57,9 +57,14 @@ Route::get('/fitness', function () {
     return view('fitness_centers');
 })->name('fitness_centers');
 
-Route::get('/send-mail', function () {
-    Mail::to('test@test.com')->send(new FirstMail());
-});
+// Route::get('/send-mail', function () {
+//     Mail::to('test@test.com')->send(new FirstMail());
+// });
+
+Route::get('/send-mail/{email}', function ($email) {
+    Mail::to($email)->send(new FirstMail());
+    return redirect()->back()->with('success', 'Mail sent successfully!');
+})->name('send.mail');
 
 Route::get('/booking', [BookingController::class, 'create'])->name('booking');
 Route::post('/bookings', [BookingController::class, 'store'])->name('bookings.store');
@@ -76,3 +81,7 @@ Route::get('/reject_bookings',[UserController::class,'reject_bookings']);
 Route::get('/pending_bookings',[UserController::class,'pending_bookings']);
 Route::get('/delete/{id}',[UserController::class,'deleteBooking']);
 
+Route::get('/all_users',[AdminController::class,'all_users']);
+Route::get('/all_arenas',[AdminController::class,'all_arenas']);
+Route::get('/deleteuser/{id}',[AdminController::class,'deleteUsers']);
+Route::get('/deletearena/{id}',[AdminController::class,'deleteArenas']);
