@@ -42,7 +42,7 @@
             </div>
             <!-- Swimming pool 2 -->
             <div class="fitness-card">
-                <img src="{{ asset('images/Infinity.jpeg') }}" class="fitness-image" alt="Infinity pool">
+                <img src="{{ asset('images/infinity.jpeg') }}" class="fitness-image" alt="Infinity pool">
                 <div class="fitness-card-body">
                     <h5 class="fitness-title">Infinity pool</h5>
                     <p class="fitness-details">
