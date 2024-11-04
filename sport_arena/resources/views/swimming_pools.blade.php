@@ -37,7 +37,11 @@
                         076 408 4498<br>
                         Elijakanda Road, Kurundawatta, Matara.
                     </p>
-                    <a href="#" class="btn-booking">Booking</a>
+                    @if(auth()->check())
+                        <a href="{{ route('booking', ['arena_id' => 10]) }}" class="btn-booking">Booking</a>
+                    @else
+                        <a href="javascript:void(0);" onclick="alert('Please log in first.')" class="btn-booking disabled">Booking</a>
+                    @endif
                 </div>
             </div>
             <!-- Swimming pool 2 -->
@@ -53,7 +57,11 @@
                         077 564 1489<br>
                         XF8W+VJM, Kotawila North, Matara.
                     </p>
-                    <a href="#" class="btn-booking">Booking</a>
+                    @if(auth()->check())
+                        <a href="{{ route('booking', ['arena_id' => 11]) }}" class="btn-booking">Booking</a>
+                    @else
+                        <a href="javascript:void(0);" onclick="alert('Please log in first.')" class="btn-booking disabled">Booking</a>
+                    @endif
                 </div>
             </div>
             <!-- Swimming pool 3 -->
@@ -69,7 +77,11 @@
                         071 983 2156<br>
                         Kamburugamuwa road,Matara.
                     </p>
-                    <a href="#" class="btn-booking">Booking</a>
+                    @if(auth()->check())
+                        <a href="{{ route('booking', ['arena_id' => 12]) }}" class="btn-booking">Booking</a>
+                    @else
+                        <a href="javascript:void(0);" onclick="alert('Please log in first.')" class="btn-booking disabled">Booking</a>
+                    @endif
                 </div>
             </div>
         </div>

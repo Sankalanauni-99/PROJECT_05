@@ -37,7 +37,11 @@
                         077 463 7845<br>
                         Matara, Sri Lanka
                     </p>
-                    <a href="#" class="btn-booking">Booking</a>
+                    @if(auth()->check())
+                        <a href="{{ route('booking', ['arena_id' => 7]) }}" class="btn-booking">Booking</a>
+                    @else
+                        <a href="javascript:void(0);" onclick="alert('Please log in first.')" class="btn-booking disabled">Booking</a>
+                    @endif
                 </div>
             </div>
             <!-- Fitness Center 2 -->
@@ -53,7 +57,11 @@
                         077 459 5791<br>
                         Matara, Sri Lanka
                     </p>
-                    <a href="#" class="btn-booking">Booking</a>
+                    @if(auth()->check())
+                        <a href="{{ route('booking', ['arena_id' => 8]) }}" class="btn-booking">Booking</a>
+                    @else
+                        <a href="javascript:void(0);" onclick="alert('Please log in first.')" class="btn-booking disabled">Booking</a>
+                    @endif
                 </div>
             </div>
             <!-- Fitness Center 3 -->
@@ -69,7 +77,11 @@
                         041-2222681<br>
                         University Play ground, A2, Matara
                     </p>
-                    <a href="#" class="btn-booking">Booking</a>
+                    @if(auth()->check())
+                        <a href="{{ route('booking', ['arena_id' => 9]) }}" class="btn-booking">Booking</a>
+                    @else
+                        <a href="javascript:void(0);" onclick="alert('Please log in first.')" class="btn-booking disabled">Booking</a>
+                    @endif
                 </div>
             </div>
         </div>

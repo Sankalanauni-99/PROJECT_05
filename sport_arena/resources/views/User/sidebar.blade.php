@@ -17,10 +17,10 @@
                 <li class="active"><a href="{{url('confirm_bookings')}}"> <i class="icon-grid"></i>Confirmed Bookings </a></li>
                 <li class="active"><a href="{{url('reject_bookings')}}"> <i class="fa fa-bar-chart"></i>Rejected Bookings </a></li>
                 <li class="active"><a href="{{url('pending_bookings')}}"> <i class="icon-chart"></i>Pending Bookings </a></li>
-                <li class="active"><a href="{{url('fitness')}}"> <i class="icon-writing-whiteboard"></i>Indoor Stadiums </a></li>
+                <li class="active"><a href="{{url('indoor')}}"> <i class="icon-writing-whiteboard"></i>Indoor Stadiums </a></li>
                 <li class="active"><a href="{{url('fitness')}}"> <i class="icon-writing-whiteboard"></i>Fitness Centers </a></li>
-                <li class="active"><a href="{{url('fitness')}}"> <i class="icon-writing-whiteboard"></i>Outdoor Stadiums </a></li>
-                <li class="active"><a href="{{url('fitness')}}"> <i class="icon-writing-whiteboard"></i>Swimming pools </a></li>
+                <li class="active"><a href="{{url('outdoor')}}"> <i class="icon-writing-whiteboard"></i>Outdoor Stadiums </a></li>
+                <li class="active"><a href="{{url('swimming')}}"> <i class="icon-writing-whiteboard"></i>Swimming pools </a></li>
                 <!-- <li><a href="forms.html"> <i class="icon-padnote"></i>Forms </a></li>
                 <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-windows"></i>Example dropdown </a>
                   <ul id="exampledropdownDropdown" class="collapse list-unstyled ">

@@ -28,7 +28,7 @@
       <div class="page-content">
         
           <div class="container-fluid">
-               <h1>PlaySpace</h1>
+          <p style="font-size: 7vw; font-weight: bold;">Play Space</p>
             </div>    
         
     </div>
