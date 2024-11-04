@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', 'Home')
+@section('title', 'welcome')
 
 @section('custom-css')
     <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
@@ -58,12 +58,12 @@
     <p>User is NOT authenticated.</p>
 @endif -->
 
-<div class="user-icon">
+<!-- <div class="user-icon">
     <a href="">
             <img src="{{ asset('images/user icon.png') }}" alt="Default User Icon">
        
     </a>
-</div>
+</div> -->
 
 
     </nav>
@@ -89,7 +89,9 @@
         </nav>
     @endif
 </div>
-
+    <div class="logo">
+        <img src="{{ asset('logo/cropped-image (3).png') }}">
+    </div>
 
     <div class="title">
         <p>PlaySpace</p>
@@ -117,11 +119,15 @@
 
         <div class="categories_cont">
             <div class="category-item">
+            
                 <img src="{{ asset('images/City-Full-Court.jpg') }}">
+            
                  <p>Indoor Stadiums</p>
             </div>
             <div class="category-item">
+            <a href="{{ route('fitness_centers') }}">
                 <img src="{{ asset('images/fitnesscenter.jpg') }}">
+            </a>
                 <p>Fitness Centers</p>
             </div>
             <div class="category-item">

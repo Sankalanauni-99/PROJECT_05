@@ -18,8 +18,8 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
     float: right;
+    padding: 15px 30px;
     /* position: fixed !important;
     z-index: 1000000;
     width: 100%;
@@ -40,7 +40,7 @@ html{
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-family: 'Allerta Stencil', sans-serif;
 }
 
@@ -109,12 +109,16 @@ html{
     background-color: #040a3c;
 }
 
-
+.logo img{
+    width: 4vw;
+    position: relative;
+    display:block;
+}
 .title{
     color:rgb(19, 27, 65);
     font-size: 8vw;
     position: relative;
-    top:100px;
+    top:-70px;
     left:5%;
     font-family: 'Goldman',sans-serif;
     display:inline-block;
@@ -123,8 +127,8 @@ html{
 
 .image_girl{
     position: relative;
-    top: 10px;
-    left:30%;
+    top: 170px;
+    left:-14%;
     display: inline-block;
 }
 
@@ -151,7 +155,7 @@ html{
 
 .categories_title p{
     position: relative;
-    top:40px;
+    top:150px;
     left: 3%;
     display:inline-block;
     font-family: 'Newsreader',sans-serif;
@@ -165,6 +169,8 @@ html{
     margin: 60px 1%;
     font-family: 'Newsreader',sans-serif;
     font-size: 1.5vw;
+    position: relative;
+    top: 100px;
 }
 
 .categories_cont{
@@ -209,6 +215,7 @@ html{
     font-size: 2vw;
     font-weight: 600;
     text-shadow: 2px 2px 2px rgb(193, 196, 211);
+    top:80px;
 }
 
 .aboutus_cont{
@@ -216,6 +223,7 @@ html{
     display: block;
     width: 45%;
     left: 3%;
+    top:80px;
     margin: 0 0 60px 0;
     font-family: 'Newsreader',sans-serif;
     font-size: 1.5vw;
@@ -224,7 +232,7 @@ html{
 
 .contact{
     position: relative;
-    top:-35px;
+    top:35px;
     left: 3%;
     display:inline-block;
     font-family: 'Newsreader',sans-serif;
@@ -235,7 +243,7 @@ html{
 
 .contact_cont{
     position: relative;
-    top: -35px;
+    top: 30px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -247,7 +255,7 @@ html{
 .contact_icon{
     display: flex;
     position: relative;
-    top: -35px;
+    top: 30px;
 }
 
 .address_icon img{
@@ -275,7 +283,7 @@ html{
     display: flex;
     justify-content: center;
     position: relative;
-    top: -35px;
+    top: 5px;
 }
 .social_media img{
     width: 50%;
@@ -286,7 +294,7 @@ html{
     justify-content:space-around;
     margin: 0.25% 35% 0 35%;
     position: relative;
-    top: -35px;
+    top: 5px;
 }
 
 .payment_meth img{
@@ -298,13 +306,13 @@ html{
     display: flex;
     justify-content: center;
     position: relative;
-    top: -15px;
+    top: 5px;
     font-size: 0.8vw;
 }
 .footer2 p{
     display: flex;
     justify-content: center;
     position: relative;
-    top: -35px;
+    top: -5px;
     font-size: 0.8vw;
 }
