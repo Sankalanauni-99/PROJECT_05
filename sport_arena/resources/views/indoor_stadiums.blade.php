@@ -37,7 +37,11 @@
                         070 150 2150<br>
                         XG4G+3M5, Matara.
                     </p>
-                    <a href="#" class="btn-booking">Booking</a>
+                    @if(auth()->check())
+                        <a href="{{ route('booking', ['arena_id' => 1]) }}" class="btn-booking">Booking</a>
+                    @else
+                        <a href="javascript:void(0);" onclick="alert('Please log in first.')" class="btn-booking disabled">Booking</a>
+                    @endif
                 </div>
             </div>
             <!-- Indoor stadium 2 -->
@@ -53,7 +57,11 @@
                         077 347 2389<br>
                         133 Kotikagoda Road,Matara.
                     </p>
-                    <a href="#" class="btn-booking">Booking</a>
+                    @if(auth()->check())
+                        <a href="{{ route('booking', ['arena_id' => 2]) }}" class="btn-booking">Booking</a>
+                    @else
+                        <a href="javascript:void(0);" onclick="alert('Please log in first.')" class="btn-booking disabled">Booking</a>
+                    @endif
                 </div>
             </div>
             <!-- Indoor stadium 3 -->
@@ -69,7 +77,11 @@
                         077 212 5449<br>
                         XF8W+WF7, Kotawila North.
                     </p>
-                    <a href="#" class="btn-booking">Booking</a>
+                    @if(auth()->check())
+                        <a href="{{ route('booking', ['arena_id' => 3]) }}" class="btn-booking">Booking</a>
+                    @else
+                        <a href="javascript:void(0);" onclick="alert('Please log in first.')" class="btn-booking disabled">Booking</a>
+                    @endif
                 </div>
             </div>
         </div>

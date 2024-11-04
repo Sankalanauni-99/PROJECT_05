@@ -32,13 +32,14 @@
                     <p class="fitness-details">
                         <strong>Gym in MATARA</strong><br>
                         7+ years in business<br>
-                        <i>Open: Close 08.30 pm</i><br>
+                        <i>Open: 08.00 am</i><br>
+                        <i>Close: 10.00 pm</i><br>
                         077 408 4602<br>
                         48 Udyana mawatha, Matara
                     </p>
                     @if(auth()->check())
                         <!-- If the user is logged in, show the normal booking button -->
-                        <a href="{{ route('booking', ['arena_id' => 1]) }}" class="btn-booking">Booking</a>
+                        <a href="{{ route('booking', ['arena_id' => 4]) }}" class="btn-booking">Booking</a>
                     @else
                         <!-- If the user is not logged in, show a disabled booking button with an alert -->
                         <a href="javascript:void(0);" onclick="alert('Please log in first.')" class="btn-booking disabled">Booking</a>
@@ -53,12 +54,13 @@
                     <p class="fitness-details">
                         <strong>Gym in MATARA</strong><br>
                         3+ years in business<br>
-                        <i>Open: Close 10.30 pm</i><br>
+                        <i>Open: 08.00 am</i><br>
+                        <i>Close: 08.00 pm</i><br>
                         077 347 1489<br>
                         Kotuwegoda, Matara
                     </p>
                     @if(auth()->check())
-                        <a href="{{ route('booking', ['arena_id' => 2]) }}" class="btn-booking">Booking</a>
+                        <a href="{{ route('booking', ['arena_id' => 5]) }}" class="btn-booking">Booking</a>
                     @else
                         <a href="javascript:void(0);" onclick="alert('Please log in first.')" class="btn-booking disabled">Booking</a>
                     @endif
@@ -72,12 +74,13 @@
                     <p class="fitness-details">
                         <strong>Gym in MATARA</strong><br>
                         5+ years in business<br>
-                        <i>Open: Close 08.00 pm</i><br>
+                        <i>Open: 08.00 am</i><br>
+                        <i>Close: 09.00 pm</i><br>
                         071 818 5449<br>
                         67 Weherahena Rd, Matara
                     </p>
                     @if(auth()->check())
-                        <a href="{{ route('booking', ['arena_id' => 3]) }}" class="btn-booking">Booking</a>
+                        <a href="{{ route('booking', ['arena_id' => 6]) }}" class="btn-booking">Booking</a>
                     @else
                         <a href="javascript:void(0);" onclick="alert('Please log in first.')" class="btn-booking disabled">Booking</a>
                     @endif

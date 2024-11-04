@@ -131,7 +131,7 @@
                 <p>Fitness Centers</p>
             </div>
             <div class="category-item">
-            <a href="{{ route('fitness_centers') }}">
+            <a href="{{ route('outdoor_stadiums') }}">
                 <img src="{{ asset('images/outdoor.jpg') }}">
             </a>
                 <p>Outdoor Stadiums</p>
