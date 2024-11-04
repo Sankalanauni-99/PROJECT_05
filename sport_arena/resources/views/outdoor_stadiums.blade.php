@@ -12,7 +12,7 @@
     </div>
 
     <div class="fitness_image">
-        <img src="{{ asset('images/outdoor.png') }}">
+        <img src="{{ asset('images/outdoor stadium.png') }}">
     </div>
 
     <div class="sub_title">
