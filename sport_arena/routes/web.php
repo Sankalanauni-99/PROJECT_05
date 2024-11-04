@@ -66,6 +66,15 @@ Route::get('/send-mail/{email}', function ($email) {
     return redirect()->back()->with('success', 'Mail sent successfully!');
 })->name('send.mail');
 
+
+Route::get('/indoor', function () {
+    return view('indoor_stadiums');
+});
+
+// Route::get('/swimming', function () {
+//     return view('swimming_pools');
+// });
+
 Route::get('/booking', [BookingController::class, 'create'])->name('booking');
 Route::post('/bookings', [BookingController::class, 'store'])->name('bookings.store');
 
@@ -85,3 +94,4 @@ Route::get('/all_users',[AdminController::class,'all_users']);
 Route::get('/all_arenas',[AdminController::class,'all_arenas']);
 Route::get('/deleteuser/{id}',[AdminController::class,'deleteUsers']);
 Route::get('/deletearena/{id}',[AdminController::class,'deleteArenas']);
+
