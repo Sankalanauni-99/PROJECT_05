@@ -14,13 +14,13 @@
         <ul class="list-unstyled">
                 <li class="active"><a href="{{url('/')}}"> <i class="icon-home"></i>Home</a></li>
                 <li class="active"><a href="{{url('my_bookings')}}"> <i class="icon-padnote"></i>My Bookings</a></li>
-                <li class="active"><a href="{{url('confirm_bookings')}}"> <i class="icon-grid"></i>Confirm Bookings </a></li>
-                <li class="active"><a href="{{url('reject_bookings')}}"> <i class="fa fa-bar-chart"></i>Reject Bookings </a></li>
+                <li class="active"><a href="{{url('confirm_bookings')}}"> <i class="icon-grid"></i>Confirmed Bookings </a></li>
+                <li class="active"><a href="{{url('reject_bookings')}}"> <i class="fa fa-bar-chart"></i>Rejected Bookings </a></li>
                 <li class="active"><a href="{{url('pending_bookings')}}"> <i class="icon-chart"></i>Pending Bookings </a></li>
+                <li class="active"><a href="{{url('fitness')}}"> <i class="icon-writing-whiteboard"></i>Indoor Stadiums </a></li>
                 <li class="active"><a href="{{url('fitness')}}"> <i class="icon-writing-whiteboard"></i>Fitness Centers </a></li>
-                <li class="active"><a href="{{url('fitness')}}"> <i class="icon-writing-whiteboard"></i>Fitness Centers </a></li>
-                <li class="active"><a href="{{url('fitness')}}"> <i class="icon-writing-whiteboard"></i>Fitness Centers </a></li>
-                <li class="active"><a href="{{url('fitness')}}"> <i class="icon-writing-whiteboard"></i>Fitness Centers </a></li>
+                <li class="active"><a href="{{url('fitness')}}"> <i class="icon-writing-whiteboard"></i>Outdoor Stadiums </a></li>
+                <li class="active"><a href="{{url('fitness')}}"> <i class="icon-writing-whiteboard"></i>Swimming pools </a></li>
                 <!-- <li><a href="forms.html"> <i class="icon-padnote"></i>Forms </a></li>
                 <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-windows"></i>Example dropdown </a>
                   <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
