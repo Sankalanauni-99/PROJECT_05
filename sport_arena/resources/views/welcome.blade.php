@@ -119,9 +119,9 @@
 
         <div class="categories_cont">
             <div class="category-item">
-            
+            <a href="{{ route('indoor_stadiums') }}">
                 <img src="{{ asset('images/City-Full-Court.jpg') }}">
-            
+            </a>
                  <p>Indoor Stadiums</p>
             </div>
             <div class="category-item">
@@ -131,11 +131,15 @@
                 <p>Fitness Centers</p>
             </div>
             <div class="category-item">
+            <a href="{{ route('fitness_centers') }}">
                 <img src="{{ asset('images/outdoor.jpg') }}">
+            </a>
                 <p>Outdoor Stadiums</p>
             </div>
             <div class="category-item">
+            <a href="{{ route('swimming_pools') }}">
                 <img src="{{ asset('images/521.jpg') }}">
+            </a>
                 <p>Swimming pools</p>
             </div>
         </div>
