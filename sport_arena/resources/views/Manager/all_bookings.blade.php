@@ -30,6 +30,14 @@
             padding:10px;
 
         }
+        .container-fluid{
+            background-color:white;
+
+        }
+        .page-header{
+            background-color:white;
+
+        }
     </style>
   </head>
   <body>
@@ -48,9 +56,10 @@
                 <th>Payment Amount</th>
                 <th>User ID</th>
                 <th>Email</th>
-                <th>Date</th>
+                <th>Booked Date</th>
                 <th>Time_From</th>
                 <th>Time_To</th>
+                <th>Instructor Needed?</th>
                 <th>Status</th>
                 <th>Status Update</th>
                 </tr>
@@ -64,6 +73,7 @@
                     <td>{{$data->booking->date}}</td>
                     <td>{{$data->booking->time_from}}</td>
                     <td>{{$data->booking->time_to}}</td>
+                    <td>{{$data->booking->instructor_needed}}</td>
                     <td>
                         @if($data->booking->confirmation_status == 'confirmed')
 

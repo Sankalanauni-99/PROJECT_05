@@ -3,6 +3,21 @@
 <!DOCTYPE html>
 <html>
   <head> 
+  <style>
+        
+        .container-fluid{
+            background-color:white;
+
+        }
+        .page-header{
+            background-color:white;
+
+        }
+        .page-content{
+            background-color:white;
+
+        }
+    </style>
         @include('Manager.css-manager')
   </head>
   <body>
@@ -11,11 +26,11 @@
 
         @include('Manager.sidebar-manager')
       <div class="page-content">
-        <div class="page-header">
+        
           <div class="container-fluid">
-                @include('Manager.body-manager')
+               <h1>PlaySpace</h1>
             </div>    
-        </div>
+        
     </div>
     <!-- JavaScript files-->
     @include('Manager.js-manager')

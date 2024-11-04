@@ -36,7 +36,7 @@
 
         }
         .page-header{
-            background-color:black;
+            background-color:white;
 
         }
     </style>
@@ -55,9 +55,10 @@
                 <th>Payment ID</th>
                 <th>Booking ID</th>
                 <th>User ID</th>
-                <th>Date</th>
+                <th>Booked Date</th>
                 <th>Time_From</th>
                 <th>Time_To</th>
+                <th>Instructor Needed?</th>
                 <th>Delete Booking</th>
                 </tr>
                      @foreach($data as $data)
@@ -69,6 +70,7 @@
                     <td>{{$data->booking->date}}</td>
                     <td>{{$data->booking->time_from}}</td>
                     <td>{{$data->booking->time_to}}</td>
+                    <td>{{$data->booking->instructor_needed}}</td>
                     <td><a onclick="return confirm('Are you sure to delete this?');"class="btn btn-danger" href="{{url('delete_book',$data->booking_id)}}">Delete</a>
                 </td>
                 </tr>
