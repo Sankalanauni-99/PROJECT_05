@@ -45,3 +45,11 @@ Route::post('/bookings', [BookingController::class, 'store']);
 Route::get('/fitness', function () {
     return view('fitness_centers');
 });
+
+Route::get('/indoor', function () {
+    return view('indoor_stadiums');
+});
+
+Route::get('/swimming', function () {
+    return view('swimming_pools');
+});
